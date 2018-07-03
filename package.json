@@ -4,15 +4,19 @@
   "description": "ads for the reddit mobile web client",
   "main": "core.es6.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "reddit <jack@reddit.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.8.0",
+    "lodash": "^4.17.5",
     "react": "^0.13.0",
     "react-mutator": "^0.4.0",
     "snoode": "^1.5.1",
-    "superagent": "^1.2.0"
-  }
+    "superagent": "^1.2.0",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
